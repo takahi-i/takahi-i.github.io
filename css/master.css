@@ -1,0 +1,100 @@
+html {
+  font-size: 100%;
+  /* =16px */ }
+
+a {
+  text-decoration: none; }
+
+#contents {
+  counter-reset: count;
+  max-width: 60%;
+  margin: 1.5rem auto 1.5rem auto;
+  padding: 2.0rem; }
+  #contents .software .product .title {
+    margin-bottom: .2rem; }
+    #contents .software .product .title .icon:before {
+      margin-right: .2rem;
+      font-family: fontawesome;
+      content: "\f0fc"; }
+    #contents .software .product .title .icon-redpen:before {
+      content: "\f040"; }
+    #contents .software .product .title .icon-walter:before {
+      content: "\f27e"; }
+    #contents .software .product .title .icon-cookiecutter:before {
+      content: "\f192"; }
+  #contents .source-link {
+    font-size: 16px;
+    margin-left: 0.3rem; }
+
+.menu {
+  background-color: #222222;
+  color: white;
+  width: 100%; }
+  .menu .menu_contents {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left; }
+  .menu ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0.3rem;
+    list-style-type: none; }
+  .menu a {
+    display: block;
+    border-radius: 0.3rem;
+    padding: 0.8rem 0.8rem;
+    color: white;
+    text-decoration: none; }
+  .menu li a:hover {
+    background-color: #3794de; }
+  .menu .icon {
+    display: inline-block;
+    margin-right: .5rem;
+    font-family: fontawesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+#footer {
+  background-color: #222222;
+  width: 100%; }
+  #footer p {
+    margin: 0 auto; }
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2.2rem; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 3.0rem;
+    margin: 1.8rem 0 1.8rem 0;
+    line-height: 6.0rem; }
+  #contents {
+    max-width: 100%; }
+    #contents li {
+      list-style-type: none;
+      margin: 1.6rem 0 1.6rem 0; }
+  .product {
+    flex: 0 0 100%; } }
+  @media screen and (max-width: 1024px) and (max-width: 768px) {
+    .product {
+      flex: 0 0 100% !important; } }
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    flex: 0 0 100%; } }
+  @media screen and (max-width: 1024px) and (max-width: 768px) {
+    .profile {
+      flex: 0 0 100% !important; } }
+
+@media screen and (max-width: 1024px) {
+  .menu .menu_contents {
+    line-height: 4.0rem;
+    max-width: 100%;
+    width: 100%; }
+    .menu .menu_contents li {
+      font-size: 1.5rem; } }
